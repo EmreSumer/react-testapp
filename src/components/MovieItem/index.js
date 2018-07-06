@@ -4,7 +4,6 @@ import React, {Component} from 'react';
 class MovieItem extends Component {
   
     render() {
-      console.log(this.state)
       return (
         <tr onClick={(e) => this.props.rowClicked(e)}>
           <td>
