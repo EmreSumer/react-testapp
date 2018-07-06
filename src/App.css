@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+div{
+  display: block;
+}
+table{
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
+}
+table.findList {
+  border-collapse: collapse;
+  width: 100%;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+tr:hover{
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+  cursor: pointer;
+}
+td, th {
+  display: table-cell;
+  vertical-align: inherit;
+}
+img{
+  max-width: 70px;
+}
+tr:nth-child(odd) {
+  background: lightgray;
+}
+
+tr:nth-child(even) {
+  background: white;
+}
+
+.container {
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+}
+
+.left {
+  float: left;
+  width: 500px;
+  background:white;
+}
+
+.right {
+  float: right;
+  width: 500px;
+  background: lightgrey;
+}
