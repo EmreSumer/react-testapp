@@ -29,7 +29,6 @@ class MovieContainer extends Component {
   
     
     render() {
-      console.log(this.state.description)
       //Sort by year
       this.state.data.sort((a,b)=>{return a.Year.localeCompare(b.Year)})
       const movie_items =  this.state.data.length  ?  this.state.data.map((item) =>  <MovieItem rowClicked={(e) => this.rowClicked(e, item.imdbID)} name={item.Title} key={item.imdbID} image={item.Poster} year={item.Year} plot={item.Plot}/>) : null;
